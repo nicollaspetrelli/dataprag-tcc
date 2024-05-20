@@ -1,0 +1,81 @@
+/*
+ *    DataTables Tailwind Css Theme Light and Dark mode
+ *    By Nicollas Feitosa <nicollas.dev>
+ */
+
+td.dataTables_empty {
+    text-align: center;
+    color: #9e9e9e;
+    padding: 1em 0;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    padding: .5rem 0;
+}
+
+.dataTables_filter label input {
+    padding: 0.5rem;
+    background-color: #24262d;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 250px;
+}
+
+.dataTables_filter label input:focus {
+    box-shadow: 0 0 0 3px #37a16894;
+    outline: 0
+}
+
+/* BUTTON */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.next:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled), button.dt-button {
+    background: #37a169 !important;
+    color: #ffffff !important;
+    border-color: #46c07f !important;
+    padding: 5px 10px !important;
+    border-radius: 5px !important;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:hover:not(.disabled), button.dt-button:focus, button.dt-button:focus:not(.disabled), button.dt-button:hover, button.dt-button:hover:not(.disabled) {
+    background-color: #216842 !important;
+    /* border-width: 1px !important; */
+    /* border-color: #46c07f !important; */
+    padding: 10px;
+    color: #fefeff !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:not(.disabled) {
+    background: #37a169 !important;
+    color: #ffffff !important;
+    border-color: #46c07f !important;
+    padding: 10-px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* BUTTON HOUVER */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: #46c07f !important;
+    color: #ffffff !important;
+    border-color: #46c07f !important;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+html .dataTables_length select {
+    padding: .25rem;
+    border-radius: .25rem;
+    background-color: #e6e6e6;
+}
+
+html.theme-dark .dataTables_length select {
+    padding: .25rem;
+    border-radius: .25rem;
+    background-color: #24262d;
+}

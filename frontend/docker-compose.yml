@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  react:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    environment: 
+      - NODE_ENV=development
+    volumes:
+     - ./:/usr/src/app
+    command: sh -c "sh run.sh"
+    ports:
+     - 3000:3000
+    tty: true

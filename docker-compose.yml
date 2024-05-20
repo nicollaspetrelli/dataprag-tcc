@@ -1,0 +1,57 @@
+version: "3.9"
+services:
+  database:
+    image: mysql:8.0.25
+    command: --default-authentication-plugin=mysql_native_password
+    working_dir: /app
+    env_file:
+      - ./docker/database/.env
+    ports:
+      - 3306:3306
+    depends_on:
+      - php
+    volumes:
+      - /docker/volumes/db/dataprag:/var/lib/mysql
+    networks:
+      dataprag:
+        aliases:
+          - db.dataprag
+
+  webserver:
+    image: nginx:alpine
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - 8000:8000
+    depends_on:
+      - php
+    networks:
+      dataprag:
+
+
+  php:
+    build: docker/php
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+      - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    expose:
+      - 9003
+      - 9000
+    networks:
+      dataprag:
+        aliases:
+          - "php-fpm"
+
+volumes:
+  database:
+
+
+networks:
+  dataprag:

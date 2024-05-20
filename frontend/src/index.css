@@ -1,0 +1,44 @@
+/* Tailwind  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap');
+
+/* Pure CSS Changes */
+@layer base {
+
+    /* Overrides the tailwind base utility */
+    input {
+        line-height: normal !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: white;
+    }
+
+    body.dark ::-webkit-scrollbar-track {
+        background-color: #121317 !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #37a169;
+    }
+
+    ::-moz-selection {
+        background: #37a169;
+        color: white;
+    }
+
+    ::selection {
+        background: #37a169;
+        color: white;
+    }
+}

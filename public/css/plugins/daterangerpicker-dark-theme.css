@@ -1,0 +1,110 @@
+div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.ranges ul li.active,
+div.daterangepicker.ltr.show-ranges.opensright div.ranges ul li.active {
+    background-color: #38a169;
+    color: #e5e7eb;
+}
+
+div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.today.active.start-date.available,
+div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.active.start-date.available,
+div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed tbody tr td.today.active.end-date.available,
+div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed tbody tr td.active.end-date.available,
+div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed tbody tr td.active.start-date.available,
+div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.active.end-date.in-range.available {
+    background-color: #38a169;
+    color: #e5e7eb;
+}
+
+html.theme-dark div.daterangepicker.ltr.show-ranges.opensright {
+    border-color: #24262d;
+    border-radius: 10px;
+}
+
+html.theme-dark div.ranges {
+    background-color: #24262d;
+    border-color: #24262d;
+    color: #e5e7eb;
+    border-radius: 5px !important;
+}
+
+html.theme-dark div.daterangepicker.ltr.show-ranges.opensright > div.ranges > ul > li {
+    border-radius: 5px;
+}
+
+html.theme-dark div.daterangepicker.ltr.show-ranges.opensright > div.ranges > ul > li.active {
+    background-color: #38a169;
+    border-radius: 5px;
+}
+
+html.theme-dark div.daterangepicker.ltr.show-ranges.opensright > div.ranges > ul > li:hover {
+    background-color: #528f6e;
+    border-radius: 5px;
+}
+
+html.theme-dark .daterangepicker:before {
+    top: -7px;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid #38a169;
+}
+
+html.theme-dark .daterangepicker:after {
+    position: absolute;
+    display: inline-block;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: "";
+}
+
+
+html.theme-dark div.daterangepicker.ltr.show-ranges.opensright.show-calendar {
+    background-color: #24262d;
+}
+
+html.theme-dark div.daterangepicker .calendar-table {
+    background-color: #24262d;
+    color : #e5e7eb;
+    border: 1px solid #22242b;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.off.ends.available,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed tbody tr td.off.ends.available {
+    background-color: #24262d;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.today.active.start-date.available,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.active.start-date.available,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed tbody tr td.active.end-date.in-range.available {
+    background-color: #38a169;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.in-range.available,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed tbody tr td.in-range.available {
+    background-color: #b4ffd79c;
+    color: #e5e7ebcb;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed tbody tr td.available:hover,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed tbody tr td.available:hover {
+    background-color: #38a169;
+    color: #e5e7ebcb;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed thead tr th.prev.available span,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed thead tr th.next.available span {
+    border-color : #e5e7eb;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed thead tr th.prev.available:hover,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left div.calendar-table table.table-condensed thead tr th.next.available:hover,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed thead tr th.next.available:hover,
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.right div.calendar-table table.table-condensed thead tr th.next.available:hover {
+    background-color: #38a169;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-calendar.left {
+    border-left: 1px solid #22242b;
+}
+
+html.theme-dark body div.daterangepicker.ltr.show-ranges.opensright.show-calendar div.drp-buttons {
+    border-top: 1px solid #22242b;
+    color: #e5e7eb;
+}
